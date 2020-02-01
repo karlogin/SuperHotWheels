@@ -7,23 +7,44 @@ public class CarCollisionComponent : MonoBehaviour
 {
     Rigidbody rb;
     CarObject carObject;
-    public Transform forwardRayPoint;
-    public float rayLength = 1;
+    [Header("Required Components")]
+    [SerializeField]
+    Transform forwardRayPoint;
+    [Header("Collision Parameters")]
+    [SerializeField]
+    float rayLength = 1; //Does not scale
 
+    /// <summary>
+    /// Intended for initialization by CarObject script
+    /// </summary>
+    /// <param name="_carObject"></param>
     public void InitCarCollision(CarObject _carObject)
     {
         rb = GetComponent<Rigidbody>();
         carObject = _carObject;
     }
 
+    /// <summary>
+    /// Give the total of direction and wanted "speed" to push the object
+    /// </summary>
+    /// <param name="_movement"></param>
     public void AddMovementForce(Vector3 _movement)
     {
         rb.AddForce(_movement);
     }
 
+    /// <summary>
+    /// Get current velocity of attached rigidbody
+    /// </summary>
+    /// <returns></returns>
     public float GetCurrentSpeed()
     {
         return rb.velocity.magnitude;
+    }
+
+    private void FixedUpdate()
+    {
+        HandleForwardCollision();
     }
 
     void HandleForwardCollision()
@@ -34,6 +55,12 @@ public class CarCollisionComponent : MonoBehaviour
         }
     }
 
+    /// <summary>
+    /// Essentially Physics.Raycast but with ray being drawn and the position already given.
+    /// </summary>
+    /// <param name="_direction"></param>
+    /// <param name="_hit"></param>
+    /// <returns></returns>
     public bool GetCollidedHit(Vector3 _direction, out RaycastHit _hit)
     {
         Ray ray = new Ray(forwardRayPoint.position, _direction);
@@ -44,10 +71,5 @@ public class CarCollisionComponent : MonoBehaviour
             return true;
         }
         return false;
-    }
-
-    private void OnCollisionStay(Collision collision)
-    {
-        HandleForwardCollision();
     }
 }

@@ -1943,11 +1943,11 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 2045209785}
+  - component: {fileID: 2045209790}
   - component: {fileID: 2045209788}
   - component: {fileID: 2045209787}
   - component: {fileID: 2045209786}
   - component: {fileID: 2045209789}
-  - component: {fileID: 2045209790}
   m_Layer: 0
   m_Name: CarCollider
   m_TagString: Untagged
