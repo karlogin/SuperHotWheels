@@ -13,6 +13,7 @@ public class CarCollisionComponent : MonoBehaviour
     [Header("Collision Parameters")]
     [SerializeField]
     float rayLength = 1; //Does not scale
+    int collidingLayers;
 
     /// <summary>
     /// Intended for initialization by CarObject script
@@ -22,6 +23,7 @@ public class CarCollisionComponent : MonoBehaviour
     {
         rb = GetComponent<Rigidbody>();
         carObject = _carObject;
+        collidingLayers = LayerMask.GetMask("Default");
     }
 
     /// <summary>
@@ -31,6 +33,11 @@ public class CarCollisionComponent : MonoBehaviour
     public void AddMovementForce(Vector3 _movement)
     {
         rb.AddForce(_movement);
+    }
+
+    public void SetToMaxSpeed()
+    {
+        rb.AddForce(rb.velocity.normalized * carObject.GetMaxSpeed(), ForceMode.Acceleration);
     }
 
     /// <summary>
@@ -64,7 +71,7 @@ public class CarCollisionComponent : MonoBehaviour
     public bool GetCollidedHit(Vector3 _direction, out RaycastHit _hit)
     {
         Ray ray = new Ray(forwardRayPoint.position, _direction);
-        if(Physics.Raycast(ray, out _hit, rayLength))
+        if(Physics.Raycast(ray, out _hit, rayLength, collidingLayers))
         {
             //Debug.Log(_hit.transform.gameObject);
             Debug.DrawRay(ray.origin, ray.direction, Color.red, rayLength);

@@ -20,6 +20,7 @@ public class CarObject : MonoBehaviour
     float InAirfloorAlignSpeed = 1;
 
     bool isGrounded = false;
+    public bool isGo = false;
 
     private void Start()
     {
@@ -34,13 +35,18 @@ public class CarObject : MonoBehaviour
 
     void HandleCarMovement()
     {
-        if (isGrounded)
+        if (isGrounded && isGo)
         {
             if(carCollisionComponent.GetCurrentSpeed() < maxSpeed)
             {
                 carCollisionComponent.AddMovementForce(transform.forward * forwardSpeed);
             }            
         }        
+    }
+
+    public float GetMaxSpeed()
+    {
+        return forwardSpeed;
     }
 
     /// <summary>
