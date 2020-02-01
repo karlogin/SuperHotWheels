@@ -6,7 +6,12 @@ public class CarObject : MonoBehaviour
 {
     public CarCollisionComponent carCollisionComponent;
 
+    //10 > seems to be enough to get over 45 degree angles
+    //15 does ramp off
+    //20 Can do larger loop-de-loop
     public float forwardSpeed = 1;
+    public float InAirfloorAlignSpeed = 1;
+    bool isGrounded = false;
 
     private void Start()
     {
@@ -16,17 +21,41 @@ public class CarObject : MonoBehaviour
     void FixedUpdate()
     {
         HandleCarMovement();
+        OrientToFloor();
     }
 
     void HandleCarMovement()
     {
-        carCollisionComponent.AddMovementForce(transform.forward * forwardSpeed);
+        if (isGrounded)
+        {
+            carCollisionComponent.AddMovementForce(transform.forward * forwardSpeed);
+        }        
     }
 
-    public void SetCarRotation(Vector3 _rot)
+    public void SetCarForwardRotation(Vector3 _rot)
     {
-        Vector3 carForward = transform.forward - Vector3.Dot(transform.forward, _rot)*_rot;
-        transform.rotation = Quaternion.LookRotation(carForward);
+        //Only set rotation if is a wall
+        if(Vector3.Angle(transform.up, _rot) > 80)
+        {
+            Vector3 carForward = transform.forward - Vector3.Dot(transform.forward, _rot) * _rot;
+            transform.rotation = Quaternion.LookRotation(carForward);            
+        }        
+    }
+
+    public void OrientToFloor()
+    {
+        if(carCollisionComponent.GetCollidedHit(-transform.up, out RaycastHit hit))
+        {
+            //Vector3 carUp = Vector3.Cross(transform.right, hit.normal);
+            //transform.rotation = Quaternion.LookRotation(Vector3.ProjectOnPlane(transform.forward, hit.normal), hit.normal);
+            transform.rotation = Quaternion.FromToRotation(transform.up, hit.normal) * transform.rotation;
+            isGrounded = true;
+        }
+        else
+        {
+            transform.rotation = Quaternion.Slerp(transform.rotation, Quaternion.FromToRotation(transform.up, Vector3.up) * transform.rotation, Time.deltaTime* InAirfloorAlignSpeed);
+            isGrounded = false;
+        }
     }
 
     void Movement()

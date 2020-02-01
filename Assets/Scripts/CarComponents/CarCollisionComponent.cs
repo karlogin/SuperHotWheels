@@ -6,7 +6,7 @@ using UnityEngine;
 public class CarCollisionComponent : MonoBehaviour
 {
     Rigidbody rb;
-    public CarObject carObject;
+    CarObject carObject;
     public float rayLength = 1;
 
     public void InitCarCollision(CarObject _carObject)
@@ -21,22 +21,26 @@ public class CarCollisionComponent : MonoBehaviour
     }
 
     void HandleForwardCollision()
-    {
-        GetCollidedHit();
-    }
-
-    void GetCollidedHit()
-    {
-        Ray ray = new Ray(transform.position, carObject.transform.forward);
-        RaycastHit hit = new RaycastHit();
-        if(Physics.Raycast(ray, out hit, rayLength))
+    {        
+        if(GetCollidedHit(carObject.transform.forward, out RaycastHit hit))
         {
-            Debug.DrawRay(ray.origin, ray.direction, Color.red, rayLength);
-            carObject.SetCarRotation(hit.normal);
+            carObject.SetCarForwardRotation(hit.normal);
         }
     }
 
-    private void OnCollisionEnter(Collision collision)
+    public bool GetCollidedHit(Vector3 _direction, out RaycastHit _hit)
+    {
+        Ray ray = new Ray(transform.position, _direction);
+        if(Physics.Raycast(ray, out _hit, rayLength))
+        {
+            //Debug.Log(_hit.transform.gameObject);
+            Debug.DrawRay(ray.origin, ray.direction, Color.red, rayLength);
+            return true;
+        }
+        return false;
+    }
+
+    private void OnCollisionStay(Collision collision)
     {
         HandleForwardCollision();
     }
