@@ -7,6 +7,7 @@ public class CarCollisionComponent : MonoBehaviour
 {
     Rigidbody rb;
     CarObject carObject;
+    public Transform forwardRayPoint;
     public float rayLength = 1;
 
     public void InitCarCollision(CarObject _carObject)
@@ -20,6 +21,11 @@ public class CarCollisionComponent : MonoBehaviour
         rb.AddForce(_movement);
     }
 
+    public float GetCurrentSpeed()
+    {
+        return rb.velocity.magnitude;
+    }
+
     void HandleForwardCollision()
     {        
         if(GetCollidedHit(carObject.transform.forward, out RaycastHit hit))
@@ -30,7 +36,7 @@ public class CarCollisionComponent : MonoBehaviour
 
     public bool GetCollidedHit(Vector3 _direction, out RaycastHit _hit)
     {
-        Ray ray = new Ray(transform.position, _direction);
+        Ray ray = new Ray(forwardRayPoint.position, _direction);
         if(Physics.Raycast(ray, out _hit, rayLength))
         {
             //Debug.Log(_hit.transform.gameObject);

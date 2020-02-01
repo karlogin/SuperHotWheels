@@ -10,6 +10,7 @@ public class CarObject : MonoBehaviour
     //15 does ramp off
     //20 Can do larger loop-de-loop
     public float forwardSpeed = 1;
+    public float maxSpeed = 1;
     public float InAirfloorAlignSpeed = 1;
     bool isGrounded = false;
 
@@ -28,7 +29,10 @@ public class CarObject : MonoBehaviour
     {
         if (isGrounded)
         {
-            carCollisionComponent.AddMovementForce(transform.forward * forwardSpeed);
+            if(carCollisionComponent.GetCurrentSpeed() < maxSpeed)
+            {
+                carCollisionComponent.AddMovementForce(transform.forward * forwardSpeed);
+            }            
         }        
     }
 
