@@ -7,6 +7,7 @@ public class CarObject : MonoBehaviour
     [Header("Required Components")]
     [SerializeField]
     CarCollisionComponent carCollisionComponent;
+    AudioSource carAudio;
 
     [Header("Car Properties")]
     //10 > seems to be enough to get over 45 degree angles
@@ -31,9 +32,11 @@ public class CarObject : MonoBehaviour
     private void Start()
     {
         carCollisionComponent.InitCarCollision(this);
+        carAudio = GetComponent<AudioSource>();
         if (startPiece)
         {
             SetStartingTransform(startPiece);
+            ResetCar();
         }
         else
         {
@@ -44,6 +47,7 @@ public class CarObject : MonoBehaviour
     public void SetIsGo(bool _isGo)
     {
         isGo = _isGo;
+        carAudio.Play();
     }
 
     public void SetStartingTransform(Vector3 _pos, Quaternion _rot)
