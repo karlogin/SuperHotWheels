@@ -33,7 +33,6 @@ public class GameWorldManager : MonoBehaviour
     {
         while (gameObject)
         {
-            Debug.Log(car.transform.position.y);
             if(car.transform.position.y < 0)
             {
                 car.ResetCar();

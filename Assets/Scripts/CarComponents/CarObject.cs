@@ -7,11 +7,14 @@ public class CarObject : MonoBehaviour
     [Header("Required Components")]
     [SerializeField]
     CarCollisionComponent carCollisionComponent;
+    AudioSource carAudio;
 
     [Header("Car Properties")]
     //10 > seems to be enough to get over 45 degree angles
     //15 does ramp off
     //20 Can do larger loop-de-loop
+    [SerializeField]
+    Transform startPiece;
     [SerializeField]
     Vector3 startPoint;
     [SerializeField]
@@ -29,12 +32,22 @@ public class CarObject : MonoBehaviour
     private void Start()
     {
         carCollisionComponent.InitCarCollision(this);
-        SetStartingTransform(transform.position, transform.rotation);
+        carAudio = GetComponent<AudioSource>();
+        if (startPiece)
+        {
+            SetStartingTransform(startPiece);
+            ResetCar();
+        }
+        else
+        {
+            SetStartingTransform(transform.position, transform.rotation);
+        }        
     }
 
     public void SetIsGo(bool _isGo)
     {
         isGo = _isGo;
+        carAudio.Play();
     }
 
     public void SetStartingTransform(Vector3 _pos, Quaternion _rot)
@@ -43,11 +56,26 @@ public class CarObject : MonoBehaviour
         startRotation = _rot;
     }
 
+    public void SetStartingTransform(Transform _transform )
+    {
+        startPoint = _transform.position;
+        startRotation = _transform.rotation;
+    }
+
     public void ResetCar()
     {
         isGo = false;
-        carCollisionComponent.transform.position = startPoint;
-        transform.rotation = startRotation;
+        if (startPiece)
+        {
+            carCollisionComponent.transform.position = startPiece.position;
+            transform.rotation = startPiece.rotation;
+        }
+        else
+        {
+            carCollisionComponent.transform.position = startPoint;
+            transform.rotation = startRotation;
+        }
+        
         carCollisionComponent.ResetVelocity();
     }
 

@@ -4,7 +4,6 @@ using UnityEngine;
 
 public class TrackPiece : MonoBehaviour
 {
-
     private Vector3 mOffset;
     private float mZCoord;
 

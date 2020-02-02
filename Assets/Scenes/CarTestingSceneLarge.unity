@@ -230,6 +230,16 @@ PrefabInstance:
       propertyPath: m_Name
       value: Track_Straight (3)
       objectReference: {fileID: 0}
+    - target: {fileID: 5223455590980716016, guid: f0ddb1875cb8a4e4f954848a61baf841,
+        type: 3}
+      propertyPath: snapLayer
+      value: 9
+      objectReference: {fileID: 0}
+    - target: {fileID: 5223455591071717740, guid: f0ddb1875cb8a4e4f954848a61baf841,
+        type: 3}
+      propertyPath: snapLayer
+      value: 9
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: f0ddb1875cb8a4e4f954848a61baf841, type: 3}
 --- !u!4 &379729106 stripped
@@ -245,6 +255,11 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1128548603}
     m_Modifications:
+    - target: {fileID: 1444579860822372738, guid: c5ea130108afb984ab211263bc82e6fe,
+        type: 3}
+      propertyPath: snapLayer
+      value: 9
+      objectReference: {fileID: 0}
     - target: {fileID: 5530848542368957564, guid: c5ea130108afb984ab211263bc82e6fe,
         type: 3}
       propertyPath: m_Name
@@ -255,6 +270,11 @@ PrefabInstance:
       propertyPath: m_Materials.Array.data[0]
       value: 
       objectReference: {fileID: 2100000, guid: eba3acaf654aebc47b18551004bf60c2, type: 2}
+    - target: {fileID: 7392517420230133185, guid: c5ea130108afb984ab211263bc82e6fe,
+        type: 3}
+      propertyPath: snapLayer
+      value: 9
+      objectReference: {fileID: 0}
     - target: {fileID: 8834616246003922543, guid: c5ea130108afb984ab211263bc82e6fe,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -347,10 +367,20 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1128548603}
     m_Modifications:
+    - target: {fileID: 1444579860822372738, guid: c5ea130108afb984ab211263bc82e6fe,
+        type: 3}
+      propertyPath: snapLayer
+      value: 9
+      objectReference: {fileID: 0}
     - target: {fileID: 5530848542368957564, guid: c5ea130108afb984ab211263bc82e6fe,
         type: 3}
       propertyPath: m_Name
       value: Track_Curve (1)
+      objectReference: {fileID: 0}
+    - target: {fileID: 7392517420230133185, guid: c5ea130108afb984ab211263bc82e6fe,
+        type: 3}
+      propertyPath: snapLayer
+      value: 9
       objectReference: {fileID: 0}
     - target: {fileID: 8834616246003922543, guid: c5ea130108afb984ab211263bc82e6fe,
         type: 3}
@@ -760,6 +790,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   carCollisionComponent: {fileID: 2045209790}
+  startPiece: {fileID: 0}
   startPoint: {x: 0, y: 0, z: 0}
   startRotation: {x: 0, y: 0, z: 0, w: 0}
   forwardSpeed: 70
@@ -941,10 +972,20 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1128548603}
     m_Modifications:
+    - target: {fileID: 1444579860822372738, guid: c5ea130108afb984ab211263bc82e6fe,
+        type: 3}
+      propertyPath: snapLayer
+      value: 9
+      objectReference: {fileID: 0}
     - target: {fileID: 5530848542368957564, guid: c5ea130108afb984ab211263bc82e6fe,
         type: 3}
       propertyPath: m_Name
       value: Track_Curve (4)
+      objectReference: {fileID: 0}
+    - target: {fileID: 7392517420230133185, guid: c5ea130108afb984ab211263bc82e6fe,
+        type: 3}
+      propertyPath: snapLayer
+      value: 9
       objectReference: {fileID: 0}
     - target: {fileID: 8834616246003922543, guid: c5ea130108afb984ab211263bc82e6fe,
         type: 3}
@@ -1410,11 +1451,21 @@ PrefabInstance:
       propertyPath: parentObjectToMove
       value: 
       objectReference: {fileID: 1557603956}
+    - target: {fileID: 5223455590980716016, guid: f0ddb1875cb8a4e4f954848a61baf841,
+        type: 3}
+      propertyPath: snapLayer
+      value: 9
+      objectReference: {fileID: 0}
     - target: {fileID: 5223455591071717740, guid: f0ddb1875cb8a4e4f954848a61baf841,
         type: 3}
       propertyPath: parentObjectToMove
       value: 
       objectReference: {fileID: 1557603956}
+    - target: {fileID: 5223455591071717740, guid: f0ddb1875cb8a4e4f954848a61baf841,
+        type: 3}
+      propertyPath: snapLayer
+      value: 9
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: f0ddb1875cb8a4e4f954848a61baf841, type: 3}
 --- !u!1001 &1808215211
@@ -1428,6 +1479,16 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: Track_LoopDeLoop (1)
+      objectReference: {fileID: 0}
+    - target: {fileID: 6519755592015561346, guid: 9da3f8853cabbd445bf4edd7a78fd2e0,
+        type: 3}
+      propertyPath: snapLayer
+      value: 9
+      objectReference: {fileID: 0}
+    - target: {fileID: 6662949182704923937, guid: 9da3f8853cabbd445bf4edd7a78fd2e0,
+        type: 3}
+      propertyPath: snapLayer
+      value: 9
       objectReference: {fileID: 0}
     - target: {fileID: 7445050268509479564, guid: 9da3f8853cabbd445bf4edd7a78fd2e0,
         type: 3}
@@ -1577,6 +1638,11 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1128548603}
     m_Modifications:
+    - target: {fileID: 1444579860822372738, guid: c5ea130108afb984ab211263bc82e6fe,
+        type: 3}
+      propertyPath: snapLayer
+      value: 9
+      objectReference: {fileID: 0}
     - target: {fileID: 5530848542368957564, guid: c5ea130108afb984ab211263bc82e6fe,
         type: 3}
       propertyPath: m_Name
@@ -1587,6 +1653,11 @@ PrefabInstance:
       propertyPath: m_Materials.Array.data[0]
       value: 
       objectReference: {fileID: 2100000, guid: eba3acaf654aebc47b18551004bf60c2, type: 2}
+    - target: {fileID: 7392517420230133185, guid: c5ea130108afb984ab211263bc82e6fe,
+        type: 3}
+      propertyPath: snapLayer
+      value: 9
+      objectReference: {fileID: 0}
     - target: {fileID: 8834616246003922543, guid: c5ea130108afb984ab211263bc82e6fe,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -1807,11 +1878,21 @@ PrefabInstance:
       propertyPath: parentObjectToMove
       value: 
       objectReference: {fileID: 1718824791}
+    - target: {fileID: 5223455590980716016, guid: f0ddb1875cb8a4e4f954848a61baf841,
+        type: 3}
+      propertyPath: snapLayer
+      value: 9
+      objectReference: {fileID: 0}
     - target: {fileID: 5223455591071717740, guid: f0ddb1875cb8a4e4f954848a61baf841,
         type: 3}
       propertyPath: parentObjectToMove
       value: 
       objectReference: {fileID: 1718824791}
+    - target: {fileID: 5223455591071717740, guid: f0ddb1875cb8a4e4f954848a61baf841,
+        type: 3}
+      propertyPath: snapLayer
+      value: 9
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: f0ddb1875cb8a4e4f954848a61baf841, type: 3}
 --- !u!1001 &2012323633
@@ -1824,6 +1905,10 @@ PrefabInstance:
     - target: {fileID: 100004, guid: 126d619cf4daa52469682f85c1378b4a, type: 3}
       propertyPath: m_Name
       value: OVRCameraRig
+      objectReference: {fileID: 0}
+    - target: {fileID: 100004, guid: 126d619cf4daa52469682f85c1378b4a, type: 3}
+      propertyPath: m_IsActive
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 400004, guid: 126d619cf4daa52469682f85c1378b4a, type: 3}
       propertyPath: m_LocalPosition.x
@@ -2063,6 +2148,16 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: Track_Tunnel_Walls (1)
+      objectReference: {fileID: 0}
+    - target: {fileID: 1494293097346499075, guid: 0f7bf8142415ebb459144563b4a91a9a,
+        type: 3}
+      propertyPath: snapLayer
+      value: 9
+      objectReference: {fileID: 0}
+    - target: {fileID: 6870913683857842440, guid: 0f7bf8142415ebb459144563b4a91a9a,
+        type: 3}
+      propertyPath: snapLayer
+      value: 9
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 0f7bf8142415ebb459144563b4a91a9a, type: 3}
@@ -2334,6 +2429,16 @@ PrefabInstance:
       propertyPath: m_Name
       value: Track_Tunnel_Walls
       objectReference: {fileID: 0}
+    - target: {fileID: 1494293097346499075, guid: 0f7bf8142415ebb459144563b4a91a9a,
+        type: 3}
+      propertyPath: snapLayer
+      value: 9
+      objectReference: {fileID: 0}
+    - target: {fileID: 6870913683857842440, guid: 0f7bf8142415ebb459144563b4a91a9a,
+        type: 3}
+      propertyPath: snapLayer
+      value: 9
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 0f7bf8142415ebb459144563b4a91a9a, type: 3}
 --- !u!4 &5006512735005639178
@@ -2425,6 +2530,16 @@ PrefabInstance:
       propertyPath: m_Name
       value: Track_Straight
       objectReference: {fileID: 0}
+    - target: {fileID: 5223455590980716016, guid: f0ddb1875cb8a4e4f954848a61baf841,
+        type: 3}
+      propertyPath: snapLayer
+      value: 9
+      objectReference: {fileID: 0}
+    - target: {fileID: 5223455591071717740, guid: f0ddb1875cb8a4e4f954848a61baf841,
+        type: 3}
+      propertyPath: snapLayer
+      value: 9
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: f0ddb1875cb8a4e4f954848a61baf841, type: 3}
 --- !u!1001 &5374502637052341374
@@ -2434,10 +2549,20 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1128548603}
     m_Modifications:
+    - target: {fileID: 1444579860822372738, guid: c5ea130108afb984ab211263bc82e6fe,
+        type: 3}
+      propertyPath: snapLayer
+      value: 9
+      objectReference: {fileID: 0}
     - target: {fileID: 5530848542368957564, guid: c5ea130108afb984ab211263bc82e6fe,
         type: 3}
       propertyPath: m_Name
       value: Track_Curve
+      objectReference: {fileID: 0}
+    - target: {fileID: 7392517420230133185, guid: c5ea130108afb984ab211263bc82e6fe,
+        type: 3}
+      propertyPath: snapLayer
+      value: 9
       objectReference: {fileID: 0}
     - target: {fileID: 8834616246003922543, guid: c5ea130108afb984ab211263bc82e6fe,
         type: 3}
@@ -2577,6 +2702,16 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 6534794886624279404, guid: 3812cd91d45e7f24dab8869500c68bd3,
+        type: 3}
+      propertyPath: snapLayer
+      value: 9
+      objectReference: {fileID: 0}
+    - target: {fileID: 6534794888207105111, guid: 3812cd91d45e7f24dab8869500c68bd3,
+        type: 3}
+      propertyPath: snapLayer
+      value: 9
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 3812cd91d45e7f24dab8869500c68bd3, type: 3}
 --- !u!23 &6749186436113087557
@@ -2674,6 +2809,16 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: Track_LoopDeLoop
+      objectReference: {fileID: 0}
+    - target: {fileID: 6519755592015561346, guid: 9da3f8853cabbd445bf4edd7a78fd2e0,
+        type: 3}
+      propertyPath: snapLayer
+      value: 9
+      objectReference: {fileID: 0}
+    - target: {fileID: 6662949182704923937, guid: 9da3f8853cabbd445bf4edd7a78fd2e0,
+        type: 3}
+      propertyPath: snapLayer
+      value: 9
       objectReference: {fileID: 0}
     - target: {fileID: 7445050268509479564, guid: 9da3f8853cabbd445bf4edd7a78fd2e0,
         type: 3}
