@@ -67,8 +67,8 @@ MonoBehaviour:
     overrideState: 1
     value: 0
   externalLut:
-    overrideState: 0
-    value: {fileID: 0}
+    overrideState: 1
+    value: {fileID: 2800000, guid: 42401670fe40ccf478ff957777bcbc31, type: 3}
     defaultState: 1
   tonemapper:
     overrideState: 0
@@ -93,11 +93,11 @@ MonoBehaviour:
     value: 1
   ldrLut:
     overrideState: 1
-    value: {fileID: 0}
+    value: {fileID: 2800000, guid: 42401670fe40ccf478ff957777bcbc31, type: 3}
     defaultState: 4
   ldrLutContribution:
-    overrideState: 0
-    value: 1
+    overrideState: 1
+    value: 0.57
   temperature:
     overrideState: 0
     value: 0
@@ -109,19 +109,19 @@ MonoBehaviour:
     value: {r: 1, g: 1, b: 1, a: 1}
   hueShift:
     overrideState: 0
-    value: 0
+    value: 4
   saturation:
     overrideState: 0
-    value: 0
+    value: 16
   brightness:
     overrideState: 0
-    value: 0
+    value: -3
   postExposure:
     overrideState: 0
     value: 0
   contrast:
     overrideState: 0
-    value: 0
+    value: 7
   mixerRedOutRedIn:
     overrideState: 0
     value: 100
@@ -141,17 +141,17 @@ MonoBehaviour:
     overrideState: 0
     value: 0
   mixerBlueOutRedIn:
-    overrideState: 0
+    overrideState: 1
     value: 0
   mixerBlueOutGreenIn:
-    overrideState: 0
+    overrideState: 1
     value: 0
   mixerBlueOutBlueIn:
-    overrideState: 0
+    overrideState: 1
     value: 100
   lift:
-    overrideState: 0
-    value: {x: 1, y: 1, z: 1, w: 0}
+    overrideState: 1
+    value: {x: 1, y: 0.96648663, z: 0.9612338, w: 0}
   gamma:
     overrideState: 0
     value: {x: 1, y: 1, z: 1, w: 0}
