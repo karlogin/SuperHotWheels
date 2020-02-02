@@ -53,7 +53,7 @@ public class CarObject : MonoBehaviour
     public void SetStartingTransform(Vector3 _pos, Quaternion _rot)
     {
         startPoint = _pos;
-        startRotation = _rot;
+        //startRotation = _rot;
     }
 
     public void SetStartingTransform(Transform _transform )

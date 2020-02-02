@@ -31,7 +31,7 @@ public class GameWorldManager : MonoBehaviour
         Time.timeScale = timeScale;
         StartCoroutine(CheckForCarOutOfBounds());
         StartCoroutine(TimerToGo());
-        LoadNext();
+        //LoadNext();
     }
 
     IEnumerator CheckForCarOutOfBounds()
