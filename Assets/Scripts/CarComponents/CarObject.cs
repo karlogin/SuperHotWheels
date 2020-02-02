@@ -13,6 +13,8 @@ public class CarObject : MonoBehaviour
     //15 does ramp off
     //20 Can do larger loop-de-loop
     [SerializeField]
+    Transform startPiece;
+    [SerializeField]
     Vector3 startPoint;
     [SerializeField]
     Quaternion startRotation;
@@ -29,7 +31,14 @@ public class CarObject : MonoBehaviour
     private void Start()
     {
         carCollisionComponent.InitCarCollision(this);
-        SetStartingTransform(transform.position, transform.rotation);
+        if (startPiece)
+        {
+            SetStartingTransform(startPiece);
+        }
+        else
+        {
+            SetStartingTransform(transform.position, transform.rotation);
+        }        
     }
 
     public void SetIsGo(bool _isGo)
@@ -43,11 +52,26 @@ public class CarObject : MonoBehaviour
         startRotation = _rot;
     }
 
+    public void SetStartingTransform(Transform _transform )
+    {
+        startPoint = _transform.position;
+        startRotation = _transform.rotation;
+    }
+
     public void ResetCar()
     {
         isGo = false;
-        carCollisionComponent.transform.position = startPoint;
-        transform.rotation = startRotation;
+        if (startPiece)
+        {
+            carCollisionComponent.transform.position = startPiece.position;
+            transform.rotation = startPiece.rotation;
+        }
+        else
+        {
+            carCollisionComponent.transform.position = startPoint;
+            transform.rotation = startRotation;
+        }
+        
         carCollisionComponent.ResetVelocity();
     }
 
