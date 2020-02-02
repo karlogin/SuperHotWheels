@@ -6,11 +6,20 @@ public class TrackGridComponent : MonoBehaviour
 {
     float gridUnit = 0.025f;
     List<TrackPiece> trackList;
+    public TrackPiece firstTrack;
+    public TrackPiece endTrack;
+
 
     // Start is called before the first frame update
     void Start()
     {
         GetCurrentTrackPieces();
+    }
+
+    public void InitTrack(CarObject _car)
+    {
+        _car.SetStartingTransform(firstTrack.StartTransform.transform);
+        _car.ResetCar();
     }
 
     void GetCurrentTrackPieces()
