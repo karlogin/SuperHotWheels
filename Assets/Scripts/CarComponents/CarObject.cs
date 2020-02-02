@@ -13,6 +13,10 @@ public class CarObject : MonoBehaviour
     //15 does ramp off
     //20 Can do larger loop-de-loop
     [SerializeField]
+    Vector3 startPoint;
+    [SerializeField]
+    Quaternion startRotation;
+    [SerializeField]
     float forwardSpeed = 1;
     [SerializeField]
     float maxSpeed = 1;
@@ -25,6 +29,26 @@ public class CarObject : MonoBehaviour
     private void Start()
     {
         carCollisionComponent.InitCarCollision(this);
+        SetStartingTransform(transform.position, transform.rotation);
+    }
+
+    public void SetIsGo(bool _isGo)
+    {
+        isGo = _isGo;
+    }
+
+    public void SetStartingTransform(Vector3 _pos, Quaternion _rot)
+    {
+        startPoint = _pos;
+        startRotation = _rot;
+    }
+
+    public void ResetCar()
+    {
+        isGo = false;
+        carCollisionComponent.transform.position = startPoint;
+        transform.rotation = startRotation;
+        carCollisionComponent.ResetVelocity();
     }
 
     void FixedUpdate()
@@ -47,6 +71,11 @@ public class CarObject : MonoBehaviour
     public float GetMaxSpeed()
     {
         return forwardSpeed;
+    }
+
+    public float GetCurrentSpeed()
+    {
+        return carCollisionComponent.GetCurrentSpeed();
     }
 
     public float DEBUGAngleDifference;

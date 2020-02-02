@@ -12,6 +12,7 @@ GameObject:
   - component: {fileID: 4084694513493261751}
   - component: {fileID: 878714305271863490}
   - component: {fileID: 272132904711094452}
+  - component: {fileID: 6534794888297537017}
   m_Layer: 0
   m_Name: Track_Ramp
   m_TagString: Untagged
@@ -28,7 +29,7 @@ Transform:
   m_GameObject: {fileID: 272132904711094453}
   m_LocalRotation: {x: 0, y: -1, z: 0, w: 0.00000028088027}
   m_LocalPosition: {x: 0.02705, y: 0, z: -0.049800005}
-  m_LocalScale: {x: 0.001, y: 0.001, z: 0.001}
+  m_LocalScale: {x: 0.01, y: 0.01, z: 0.01}
   m_Children:
   - {fileID: 6534794886624279405}
   - {fileID: 6534794888207105128}
@@ -43,7 +44,7 @@ MeshFilter:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 272132904711094453}
-  m_Mesh: {fileID: -2170573733507368259, guid: 4f862d1cad19fc947b04a8845d6ff740, type: 3}
+  m_Mesh: {fileID: 5656012229563945577, guid: 4f862d1cad19fc947b04a8845d6ff740, type: 3}
 --- !u!23 &878714305271863490
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -62,7 +63,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: 35563470506eeec4684fbdaea58a6e92, type: 2}
+  - {fileID: 2100000, guid: eba3acaf654aebc47b18551004bf60c2, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -97,6 +98,18 @@ MeshCollider:
   m_Convex: 0
   m_CookingOptions: 30
   m_Mesh: {fileID: -2170573733507368259, guid: 4f862d1cad19fc947b04a8845d6ff740, type: 3}
+--- !u!114 &6534794888297537017
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 272132904711094453}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8ccc8488606e7754eb1b364897b53f38, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &6534794886624279406
 GameObject:
   m_ObjectHideFlags: 0
@@ -174,7 +187,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &6534794888159831407
 Transform:
   m_ObjectHideFlags: 0

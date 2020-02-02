@@ -40,6 +40,11 @@ public class CarCollisionComponent : MonoBehaviour
         rb.AddForce(rb.velocity.normalized * carObject.GetMaxSpeed(), ForceMode.Acceleration);
     }
 
+    public void ResetVelocity()
+    {
+        rb.velocity = Vector3.zero;
+    }
+
     /// <summary>
     /// Get current velocity of attached rigidbody
     /// </summary>
@@ -74,7 +79,7 @@ public class CarCollisionComponent : MonoBehaviour
         if(Physics.Raycast(ray, out _hit, rayLength, collidingLayers))
         {
             //Debug.Log(_hit.transform.gameObject);
-            Debug.DrawRay(ray.origin, ray.direction, Color.red, rayLength);
+            Debug.DrawRay(ray.origin, ray.direction * rayLength, Color.red);
             return true;
         }
         return false;

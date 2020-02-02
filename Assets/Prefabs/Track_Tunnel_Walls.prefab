@@ -12,6 +12,7 @@ GameObject:
   - component: {fileID: 2811559809510001994}
   - component: {fileID: 6767878289375739201}
   - component: {fileID: 3864876720422377871}
+  - component: {fileID: 4479140453280814829}
   m_Layer: 0
   m_Name: Track_Tunnel_Walls
   m_TagString: Untagged
@@ -28,7 +29,7 @@ Transform:
   m_GameObject: {fileID: 831994284211261285}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 0.001, y: 0.001, z: 0.001}
+  m_LocalScale: {x: 0.01, y: 0.01, z: 0.01}
   m_Children:
   - {fileID: 4239853184923374367}
   - {fileID: 6879740287828879953}
@@ -61,7 +62,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: 35563470506eeec4684fbdaea58a6e92, type: 2}
+  - {fileID: 2100000, guid: eba3acaf654aebc47b18551004bf60c2, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -96,6 +97,18 @@ MeshCollider:
   m_Convex: 0
   m_CookingOptions: 30
   m_Mesh: {fileID: 6062083407554724271, guid: c05f54dc9b2ce5e4abadd0eb1c031674, type: 3}
+--- !u!114 &4479140453280814829
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 831994284211261285}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8ccc8488606e7754eb1b364897b53f38, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &906431687912794237
 GameObject:
   m_ObjectHideFlags: 0
