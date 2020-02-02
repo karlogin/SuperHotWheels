@@ -9,7 +9,7 @@ public class TrackPiece : MonoBehaviour
     public bool isStaticPiece = false;
     public Transform StartTransform;
 
-    void OnMouseDown()
+/*    void OnMouseDown()
     {
         if (isStaticPiece)
         {
@@ -51,7 +51,7 @@ public class TrackPiece : MonoBehaviour
             return;
         }
         DropPiece();
-    }
+    }*/
 
     public void SetTrackPieceLocal(Vector3 _pos)
     {
