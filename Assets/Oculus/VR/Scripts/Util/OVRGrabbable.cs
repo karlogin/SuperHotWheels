@@ -161,4 +161,10 @@ public class OVRGrabbable : MonoBehaviour
             m_grabbedBy.ForceRelease(this);
         }
     }
+
+    private void Update()
+    {
+        if (m_grabbedBy != null)
+            transform.rotation = Quaternion.identity;
+    }
 }

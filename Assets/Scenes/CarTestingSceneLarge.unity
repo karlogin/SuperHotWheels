@@ -170,6 +170,21 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1128548603}
     m_Modifications:
+    - target: {fileID: 2584078091401270613, guid: f0ddb1875cb8a4e4f954848a61baf841,
+        type: 3}
+      propertyPath: m_snapPosition
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2584078091401270613, guid: f0ddb1875cb8a4e4f954848a61baf841,
+        type: 3}
+      propertyPath: m_snapOrientation
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2584078091401270613, guid: f0ddb1875cb8a4e4f954848a61baf841,
+        type: 3}
+      propertyPath: m_allowOffhandGrab
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 3438066547011829751, guid: f0ddb1875cb8a4e4f954848a61baf841,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -250,6 +265,21 @@ PrefabInstance:
       propertyPath: radiusToCheck
       value: 0.1
       objectReference: {fileID: 0}
+    - target: {fileID: 9086318967992897954, guid: f0ddb1875cb8a4e4f954848a61baf841,
+        type: 3}
+      propertyPath: m_Constraints
+      value: 112
+      objectReference: {fileID: 0}
+    - target: {fileID: 9086318967992897954, guid: f0ddb1875cb8a4e4f954848a61baf841,
+        type: 3}
+      propertyPath: m_AngularDrag
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 9086318967992897954, guid: f0ddb1875cb8a4e4f954848a61baf841,
+        type: 3}
+      propertyPath: m_IsKinematic
+      value: 1
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: f0ddb1875cb8a4e4f954848a61baf841, type: 3}
 --- !u!4 &379729106 stripped
@@ -265,6 +295,21 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1128548603}
     m_Modifications:
+    - target: {fileID: 936729980218799642, guid: c5ea130108afb984ab211263bc82e6fe,
+        type: 3}
+      propertyPath: m_snapPosition
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 936729980218799642, guid: c5ea130108afb984ab211263bc82e6fe,
+        type: 3}
+      propertyPath: m_snapOrientation
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 936729980218799642, guid: c5ea130108afb984ab211263bc82e6fe,
+        type: 3}
+      propertyPath: m_allowOffhandGrab
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 1444579860822372738, guid: c5ea130108afb984ab211263bc82e6fe,
         type: 3}
       propertyPath: snapLayer
@@ -275,6 +320,21 @@ PrefabInstance:
       propertyPath: radiusToCheck
       value: 0.1
       objectReference: {fileID: 0}
+    - target: {fileID: 3340406602506742666, guid: c5ea130108afb984ab211263bc82e6fe,
+        type: 3}
+      propertyPath: m_Constraints
+      value: 112
+      objectReference: {fileID: 0}
+    - target: {fileID: 3340406602506742666, guid: c5ea130108afb984ab211263bc82e6fe,
+        type: 3}
+      propertyPath: m_AngularDrag
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3340406602506742666, guid: c5ea130108afb984ab211263bc82e6fe,
+        type: 3}
+      propertyPath: m_IsKinematic
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 5530848542368957564, guid: c5ea130108afb984ab211263bc82e6fe,
         type: 3}
       propertyPath: m_Name
@@ -284,7 +344,7 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Materials.Array.data[0]
       value: 
-      objectReference: {fileID: 2100000, guid: eba3acaf654aebc47b18551004bf60c2, type: 2}
+      objectReference: {fileID: 2100000, guid: 4cf605b4a6f92294abad9f2143f65904, type: 2}
     - target: {fileID: 7392517420230133185, guid: c5ea130108afb984ab211263bc82e6fe,
         type: 3}
       propertyPath: snapLayer
@@ -387,6 +447,21 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1128548603}
     m_Modifications:
+    - target: {fileID: 936729980218799642, guid: c5ea130108afb984ab211263bc82e6fe,
+        type: 3}
+      propertyPath: m_snapPosition
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 936729980218799642, guid: c5ea130108afb984ab211263bc82e6fe,
+        type: 3}
+      propertyPath: m_snapOrientation
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 936729980218799642, guid: c5ea130108afb984ab211263bc82e6fe,
+        type: 3}
+      propertyPath: m_allowOffhandGrab
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 1444579860822372738, guid: c5ea130108afb984ab211263bc82e6fe,
         type: 3}
       propertyPath: snapLayer
@@ -396,6 +471,21 @@ PrefabInstance:
         type: 3}
       propertyPath: radiusToCheck
       value: 0.1
+      objectReference: {fileID: 0}
+    - target: {fileID: 3340406602506742666, guid: c5ea130108afb984ab211263bc82e6fe,
+        type: 3}
+      propertyPath: m_Constraints
+      value: 112
+      objectReference: {fileID: 0}
+    - target: {fileID: 3340406602506742666, guid: c5ea130108afb984ab211263bc82e6fe,
+        type: 3}
+      propertyPath: m_AngularDrag
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3340406602506742666, guid: c5ea130108afb984ab211263bc82e6fe,
+        type: 3}
+      propertyPath: m_IsKinematic
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 5530848542368957564, guid: c5ea130108afb984ab211263bc82e6fe,
         type: 3}
@@ -592,7 +682,7 @@ Transform:
   m_GameObject: {fileID: 724644083}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 1.029, z: 0}
-  m_LocalScale: {x: 0.01, y: 0.01, z: 0.01}
+  m_LocalScale: {x: 0.04, y: 0.04, z: 0.04}
   m_Children:
   - {fileID: 947437075}
   - {fileID: 2045209785}
@@ -837,7 +927,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 947437072}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0.10999441, z: 0}
+  m_LocalPosition: {x: 0, y: 0.11000037, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 5006512735005639178}
@@ -1061,7 +1151,7 @@ Transform:
   m_GameObject: {fileID: 1128548602}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 0.25, y: 0.25, z: 0.25}
+  m_LocalScale: {x: 0.4, y: 0.4, z: 0.4}
   m_Children:
   - {fileID: 1111202916}
   - {fileID: 7479078616798052512}
@@ -1107,6 +1197,21 @@ PrefabInstance:
       propertyPath: m_Enabled
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 936729980218799642, guid: c5ea130108afb984ab211263bc82e6fe,
+        type: 3}
+      propertyPath: m_snapPosition
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 936729980218799642, guid: c5ea130108afb984ab211263bc82e6fe,
+        type: 3}
+      propertyPath: m_snapOrientation
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 936729980218799642, guid: c5ea130108afb984ab211263bc82e6fe,
+        type: 3}
+      propertyPath: m_allowOffhandGrab
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 1444579860822372738, guid: c5ea130108afb984ab211263bc82e6fe,
         type: 3}
       propertyPath: snapLayer
@@ -1116,6 +1221,21 @@ PrefabInstance:
         type: 3}
       propertyPath: radiusToCheck
       value: 0.1
+      objectReference: {fileID: 0}
+    - target: {fileID: 3340406602506742666, guid: c5ea130108afb984ab211263bc82e6fe,
+        type: 3}
+      propertyPath: m_Constraints
+      value: 112
+      objectReference: {fileID: 0}
+    - target: {fileID: 3340406602506742666, guid: c5ea130108afb984ab211263bc82e6fe,
+        type: 3}
+      propertyPath: m_AngularDrag
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3340406602506742666, guid: c5ea130108afb984ab211263bc82e6fe,
+        type: 3}
+      propertyPath: m_IsKinematic
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 5530848542368957564, guid: c5ea130108afb984ab211263bc82e6fe,
         type: 3}
@@ -1293,7 +1413,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1364606935}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: -0.0000023841858, z: 0}
+  m_LocalPosition: {x: 0, y: 0.0000035762787, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 777962460}
@@ -1531,6 +1651,21 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1128548603}
     m_Modifications:
+    - target: {fileID: 2584078091401270613, guid: f0ddb1875cb8a4e4f954848a61baf841,
+        type: 3}
+      propertyPath: m_snapPosition
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2584078091401270613, guid: f0ddb1875cb8a4e4f954848a61baf841,
+        type: 3}
+      propertyPath: m_snapOrientation
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2584078091401270613, guid: f0ddb1875cb8a4e4f954848a61baf841,
+        type: 3}
+      propertyPath: m_allowOffhandGrab
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 3438066547011829751, guid: f0ddb1875cb8a4e4f954848a61baf841,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -1621,6 +1756,21 @@ PrefabInstance:
       propertyPath: radiusToCheck
       value: 0.1
       objectReference: {fileID: 0}
+    - target: {fileID: 9086318967992897954, guid: f0ddb1875cb8a4e4f954848a61baf841,
+        type: 3}
+      propertyPath: m_Constraints
+      value: 112
+      objectReference: {fileID: 0}
+    - target: {fileID: 9086318967992897954, guid: f0ddb1875cb8a4e4f954848a61baf841,
+        type: 3}
+      propertyPath: m_AngularDrag
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 9086318967992897954, guid: f0ddb1875cb8a4e4f954848a61baf841,
+        type: 3}
+      propertyPath: m_IsKinematic
+      value: 1
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: f0ddb1875cb8a4e4f954848a61baf841, type: 3}
 --- !u!1001 &1808215211
@@ -1630,6 +1780,36 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1128548603}
     m_Modifications:
+    - target: {fileID: 4807529184687790115, guid: 9da3f8853cabbd445bf4edd7a78fd2e0,
+        type: 3}
+      propertyPath: m_snapPosition
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4807529184687790115, guid: 9da3f8853cabbd445bf4edd7a78fd2e0,
+        type: 3}
+      propertyPath: m_snapOrientation
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4807529184687790115, guid: 9da3f8853cabbd445bf4edd7a78fd2e0,
+        type: 3}
+      propertyPath: m_allowOffhandGrab
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 5548159190896347126, guid: 9da3f8853cabbd445bf4edd7a78fd2e0,
+        type: 3}
+      propertyPath: m_Constraints
+      value: 112
+      objectReference: {fileID: 0}
+    - target: {fileID: 5548159190896347126, guid: 9da3f8853cabbd445bf4edd7a78fd2e0,
+        type: 3}
+      propertyPath: m_AngularDrag
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5548159190896347126, guid: 9da3f8853cabbd445bf4edd7a78fd2e0,
+        type: 3}
+      propertyPath: m_IsKinematic
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 5839330465914933407, guid: 9da3f8853cabbd445bf4edd7a78fd2e0,
         type: 3}
       propertyPath: m_Name
@@ -1803,6 +1983,21 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1128548603}
     m_Modifications:
+    - target: {fileID: 936729980218799642, guid: c5ea130108afb984ab211263bc82e6fe,
+        type: 3}
+      propertyPath: m_snapPosition
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 936729980218799642, guid: c5ea130108afb984ab211263bc82e6fe,
+        type: 3}
+      propertyPath: m_snapOrientation
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 936729980218799642, guid: c5ea130108afb984ab211263bc82e6fe,
+        type: 3}
+      propertyPath: m_allowOffhandGrab
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 1444579860822372738, guid: c5ea130108afb984ab211263bc82e6fe,
         type: 3}
       propertyPath: snapLayer
@@ -1813,6 +2008,21 @@ PrefabInstance:
       propertyPath: radiusToCheck
       value: 0.1
       objectReference: {fileID: 0}
+    - target: {fileID: 3340406602506742666, guid: c5ea130108afb984ab211263bc82e6fe,
+        type: 3}
+      propertyPath: m_Constraints
+      value: 112
+      objectReference: {fileID: 0}
+    - target: {fileID: 3340406602506742666, guid: c5ea130108afb984ab211263bc82e6fe,
+        type: 3}
+      propertyPath: m_AngularDrag
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3340406602506742666, guid: c5ea130108afb984ab211263bc82e6fe,
+        type: 3}
+      propertyPath: m_IsKinematic
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 5530848542368957564, guid: c5ea130108afb984ab211263bc82e6fe,
         type: 3}
       propertyPath: m_Name
@@ -1822,7 +2032,7 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Materials.Array.data[0]
       value: 
-      objectReference: {fileID: 2100000, guid: eba3acaf654aebc47b18551004bf60c2, type: 2}
+      objectReference: {fileID: 2100000, guid: 4cf605b4a6f92294abad9f2143f65904, type: 2}
     - target: {fileID: 7392517420230133185, guid: c5ea130108afb984ab211263bc82e6fe,
         type: 3}
       propertyPath: snapLayer
@@ -1988,6 +2198,21 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1128548603}
     m_Modifications:
+    - target: {fileID: 2584078091401270613, guid: f0ddb1875cb8a4e4f954848a61baf841,
+        type: 3}
+      propertyPath: m_snapPosition
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2584078091401270613, guid: f0ddb1875cb8a4e4f954848a61baf841,
+        type: 3}
+      propertyPath: m_snapOrientation
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2584078091401270613, guid: f0ddb1875cb8a4e4f954848a61baf841,
+        type: 3}
+      propertyPath: m_allowOffhandGrab
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 3438066547011829751, guid: f0ddb1875cb8a4e4f954848a61baf841,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -2077,6 +2302,21 @@ PrefabInstance:
         type: 3}
       propertyPath: radiusToCheck
       value: 0.1
+      objectReference: {fileID: 0}
+    - target: {fileID: 9086318967992897954, guid: f0ddb1875cb8a4e4f954848a61baf841,
+        type: 3}
+      propertyPath: m_Constraints
+      value: 112
+      objectReference: {fileID: 0}
+    - target: {fileID: 9086318967992897954, guid: f0ddb1875cb8a4e4f954848a61baf841,
+        type: 3}
+      propertyPath: m_AngularDrag
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 9086318967992897954, guid: f0ddb1875cb8a4e4f954848a61baf841,
+        type: 3}
+      propertyPath: m_IsKinematic
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: f0ddb1875cb8a4e4f954848a61baf841, type: 3}
@@ -2283,6 +2523,21 @@ PrefabInstance:
       propertyPath: radiusToCheck
       value: 0.1
       objectReference: {fileID: 0}
+    - target: {fileID: 6172629940674329802, guid: 0f7bf8142415ebb459144563b4a91a9a,
+        type: 3}
+      propertyPath: m_snapPosition
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6172629940674329802, guid: 0f7bf8142415ebb459144563b4a91a9a,
+        type: 3}
+      propertyPath: m_snapOrientation
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6172629940674329802, guid: 0f7bf8142415ebb459144563b4a91a9a,
+        type: 3}
+      propertyPath: m_allowOffhandGrab
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 6870913683857842440, guid: 0f7bf8142415ebb459144563b4a91a9a,
         type: 3}
       propertyPath: snapLayer
@@ -2292,6 +2547,21 @@ PrefabInstance:
         type: 3}
       propertyPath: radiusToCheck
       value: 0.1
+      objectReference: {fileID: 0}
+    - target: {fileID: 8424917074645964642, guid: 0f7bf8142415ebb459144563b4a91a9a,
+        type: 3}
+      propertyPath: m_Constraints
+      value: 112
+      objectReference: {fileID: 0}
+    - target: {fileID: 8424917074645964642, guid: 0f7bf8142415ebb459144563b4a91a9a,
+        type: 3}
+      propertyPath: m_AngularDrag
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8424917074645964642, guid: 0f7bf8142415ebb459144563b4a91a9a,
+        type: 3}
+      propertyPath: m_IsKinematic
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 0f7bf8142415ebb459144563b4a91a9a, type: 3}
@@ -2578,6 +2848,21 @@ PrefabInstance:
       propertyPath: m_Enabled
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 6172629940674329802, guid: 0f7bf8142415ebb459144563b4a91a9a,
+        type: 3}
+      propertyPath: m_snapPosition
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6172629940674329802, guid: 0f7bf8142415ebb459144563b4a91a9a,
+        type: 3}
+      propertyPath: m_snapOrientation
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6172629940674329802, guid: 0f7bf8142415ebb459144563b4a91a9a,
+        type: 3}
+      propertyPath: m_allowOffhandGrab
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 6870913683857842440, guid: 0f7bf8142415ebb459144563b4a91a9a,
         type: 3}
       propertyPath: snapLayer
@@ -2587,6 +2872,21 @@ PrefabInstance:
         type: 3}
       propertyPath: radiusToCheck
       value: 0.1
+      objectReference: {fileID: 0}
+    - target: {fileID: 8424917074645964642, guid: 0f7bf8142415ebb459144563b4a91a9a,
+        type: 3}
+      propertyPath: m_Constraints
+      value: 112
+      objectReference: {fileID: 0}
+    - target: {fileID: 8424917074645964642, guid: 0f7bf8142415ebb459144563b4a91a9a,
+        type: 3}
+      propertyPath: m_AngularDrag
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8424917074645964642, guid: 0f7bf8142415ebb459144563b4a91a9a,
+        type: 3}
+      propertyPath: m_IsKinematic
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 0f7bf8142415ebb459144563b4a91a9a, type: 3}
@@ -2617,6 +2917,16 @@ PrefabInstance:
     - target: {fileID: 2584078091401270613, guid: f0ddb1875cb8a4e4f954848a61baf841,
         type: 3}
       propertyPath: m_snapPosition
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2584078091401270613, guid: f0ddb1875cb8a4e4f954848a61baf841,
+        type: 3}
+      propertyPath: m_snapOrientation
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2584078091401270613, guid: f0ddb1875cb8a4e4f954848a61baf841,
+        type: 3}
+      propertyPath: m_allowOffhandGrab
       value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 3438066547011829751, guid: f0ddb1875cb8a4e4f954848a61baf841,
@@ -2699,6 +3009,21 @@ PrefabInstance:
       propertyPath: radiusToCheck
       value: 0.1
       objectReference: {fileID: 0}
+    - target: {fileID: 9086318967992897954, guid: f0ddb1875cb8a4e4f954848a61baf841,
+        type: 3}
+      propertyPath: m_Constraints
+      value: 112
+      objectReference: {fileID: 0}
+    - target: {fileID: 9086318967992897954, guid: f0ddb1875cb8a4e4f954848a61baf841,
+        type: 3}
+      propertyPath: m_AngularDrag
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 9086318967992897954, guid: f0ddb1875cb8a4e4f954848a61baf841,
+        type: 3}
+      propertyPath: m_IsKinematic
+      value: 1
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: f0ddb1875cb8a4e4f954848a61baf841, type: 3}
 --- !u!1001 &5255052049636693417
@@ -2708,17 +3033,9 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
-    - target: {fileID: 100000, guid: 126d619cf4daa52469682f85c1378b4a, type: 3}
-      propertyPath: m_IsActive
-      value: 0
-      objectReference: {fileID: 0}
     - target: {fileID: 100004, guid: 126d619cf4daa52469682f85c1378b4a, type: 3}
       propertyPath: m_Name
       value: OVRCameraRig
-      objectReference: {fileID: 0}
-    - target: {fileID: 100006, guid: 126d619cf4daa52469682f85c1378b4a, type: 3}
-      propertyPath: m_IsActive
-      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 400004, guid: 126d619cf4daa52469682f85c1378b4a, type: 3}
       propertyPath: m_LocalPosition.x
@@ -2773,6 +3090,21 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1128548603}
     m_Modifications:
+    - target: {fileID: 936729980218799642, guid: c5ea130108afb984ab211263bc82e6fe,
+        type: 3}
+      propertyPath: m_snapPosition
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 936729980218799642, guid: c5ea130108afb984ab211263bc82e6fe,
+        type: 3}
+      propertyPath: m_snapOrientation
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 936729980218799642, guid: c5ea130108afb984ab211263bc82e6fe,
+        type: 3}
+      propertyPath: m_allowOffhandGrab
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 1444579860822372738, guid: c5ea130108afb984ab211263bc82e6fe,
         type: 3}
       propertyPath: snapLayer
@@ -2782,6 +3114,21 @@ PrefabInstance:
         type: 3}
       propertyPath: radiusToCheck
       value: 0.1
+      objectReference: {fileID: 0}
+    - target: {fileID: 3340406602506742666, guid: c5ea130108afb984ab211263bc82e6fe,
+        type: 3}
+      propertyPath: m_Constraints
+      value: 112
+      objectReference: {fileID: 0}
+    - target: {fileID: 3340406602506742666, guid: c5ea130108afb984ab211263bc82e6fe,
+        type: 3}
+      propertyPath: m_AngularDrag
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3340406602506742666, guid: c5ea130108afb984ab211263bc82e6fe,
+        type: 3}
+      propertyPath: m_IsKinematic
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 5530848542368957564, guid: c5ea130108afb984ab211263bc82e6fe,
         type: 3}
@@ -2881,6 +3228,21 @@ PrefabInstance:
       propertyPath: m_Name
       value: Track_Ramp
       objectReference: {fileID: 0}
+    - target: {fileID: 2857937335421389887, guid: 3812cd91d45e7f24dab8869500c68bd3,
+        type: 3}
+      propertyPath: m_snapPosition
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2857937335421389887, guid: 3812cd91d45e7f24dab8869500c68bd3,
+        type: 3}
+      propertyPath: m_snapOrientation
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2857937335421389887, guid: 3812cd91d45e7f24dab8869500c68bd3,
+        type: 3}
+      propertyPath: m_allowOffhandGrab
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 5223123245536215719, guid: 3812cd91d45e7f24dab8869500c68bd3,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -2955,6 +3317,21 @@ PrefabInstance:
         type: 3}
       propertyPath: radiusToCheck
       value: 0.1
+      objectReference: {fileID: 0}
+    - target: {fileID: 9089404554070097425, guid: 3812cd91d45e7f24dab8869500c68bd3,
+        type: 3}
+      propertyPath: m_Constraints
+      value: 112
+      objectReference: {fileID: 0}
+    - target: {fileID: 9089404554070097425, guid: 3812cd91d45e7f24dab8869500c68bd3,
+        type: 3}
+      propertyPath: m_AngularDrag
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 9089404554070097425, guid: 3812cd91d45e7f24dab8869500c68bd3,
+        type: 3}
+      propertyPath: m_IsKinematic
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 3812cd91d45e7f24dab8869500c68bd3, type: 3}
@@ -3049,6 +3426,36 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1128548603}
     m_Modifications:
+    - target: {fileID: 4807529184687790115, guid: 9da3f8853cabbd445bf4edd7a78fd2e0,
+        type: 3}
+      propertyPath: m_snapPosition
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4807529184687790115, guid: 9da3f8853cabbd445bf4edd7a78fd2e0,
+        type: 3}
+      propertyPath: m_snapOrientation
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4807529184687790115, guid: 9da3f8853cabbd445bf4edd7a78fd2e0,
+        type: 3}
+      propertyPath: m_allowOffhandGrab
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 5548159190896347126, guid: 9da3f8853cabbd445bf4edd7a78fd2e0,
+        type: 3}
+      propertyPath: m_Constraints
+      value: 112
+      objectReference: {fileID: 0}
+    - target: {fileID: 5548159190896347126, guid: 9da3f8853cabbd445bf4edd7a78fd2e0,
+        type: 3}
+      propertyPath: m_AngularDrag
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5548159190896347126, guid: 9da3f8853cabbd445bf4edd7a78fd2e0,
+        type: 3}
+      propertyPath: m_IsKinematic
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 5839330465914933407, guid: 9da3f8853cabbd445bf4edd7a78fd2e0,
         type: 3}
       propertyPath: m_Name
