@@ -10,10 +10,14 @@ public class GameWorldManager : MonoBehaviour
     public float secondsToCheck = 1;
     public float timeTilGo = 10;
 
+    public List<TrackGridComponent> trackList;
+    int currentNum;
+    TrackGridComponent currentTrack;
+
     private void Awake()
     {
         Instance = this;
-    }
+    }    
 
     IEnumerator TimerToGo()
     {
@@ -27,6 +31,7 @@ public class GameWorldManager : MonoBehaviour
         Time.timeScale = timeScale;
         StartCoroutine(CheckForCarOutOfBounds());
         StartCoroutine(TimerToGo());
+        LoadNext();
     }
 
     IEnumerator CheckForCarOutOfBounds()
@@ -40,5 +45,23 @@ public class GameWorldManager : MonoBehaviour
             }
             yield return new WaitForSeconds(secondsToCheck);
         }
+    }
+
+    public void LoadNext()
+    {
+        if (currentTrack)
+        {
+            Destroy(currentTrack.gameObject);
+        }
+        if(currentNum < trackList.Count-1)
+        {
+            currentNum += 1;           
+        }
+        else
+        {
+            currentNum = 0;
+        }
+        currentTrack = Instantiate(trackList[currentNum]);
+        currentTrack.InitTrack(car);
     }
 }

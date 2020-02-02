@@ -6,9 +6,15 @@ public class TrackPiece : MonoBehaviour
 {
     private Vector3 mOffset;
     private float mZCoord;
+    public bool isStaticPiece = false;
+    public Transform StartTransform;
 
     void OnMouseDown()
     {
+        if (isStaticPiece)
+        {
+            return;
+        }
         mZCoord = Camera.main.WorldToScreenPoint(gameObject.transform.position).z;
 
         // Store offset = gameobject world pos - mouse world pos
@@ -31,11 +37,19 @@ public class TrackPiece : MonoBehaviour
 
     void OnMouseDrag()
     {
+        if (isStaticPiece)
+        {
+            return;
+        }
         transform.position = GetMouseAsWorldPoint() + mOffset;
     }
 
     private void OnMouseUp()
     {
+        if (isStaticPiece)
+        {
+            return;
+        }
         DropPiece();
     }
 

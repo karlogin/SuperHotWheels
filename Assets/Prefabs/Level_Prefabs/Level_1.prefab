@@ -183,6 +183,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8ccc8488606e7754eb1b364897b53f38, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  isStaticPiece: 0
 --- !u!1 &809406683209174895
 GameObject:
   m_ObjectHideFlags: 0
@@ -231,6 +232,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 7225074807705376191}
+  - component: {fileID: 4731505324756629864}
   m_Layer: 0
   m_Name: Level_1
   m_TagString: Untagged
@@ -266,6 +268,20 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &4731505324756629864
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2170493748676408499}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3bd2924d344fd03418afb8afac30a740, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  firstTrack: {fileID: 4229123254812193679}
+  endTrack: {fileID: 3515311333159911092}
 --- !u!1 &2367768272790173120
 GameObject:
   m_ObjectHideFlags: 0
@@ -746,6 +762,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8ccc8488606e7754eb1b364897b53f38, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  isStaticPiece: 1
 --- !u!114 &3515311331749906506
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -758,6 +775,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8ccc8488606e7754eb1b364897b53f38, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  isStaticPiece: 0
 --- !u!1 &3515311331773164050
 GameObject:
   m_ObjectHideFlags: 0
@@ -984,6 +1002,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8ccc8488606e7754eb1b364897b53f38, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  isStaticPiece: 1
 --- !u!1 &3515311332036455774
 GameObject:
   m_ObjectHideFlags: 0
@@ -1315,6 +1334,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8ccc8488606e7754eb1b364897b53f38, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  isStaticPiece: 1
 --- !u!1 &3515311332306449262
 GameObject:
   m_ObjectHideFlags: 0
@@ -1651,6 +1671,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8ccc8488606e7754eb1b364897b53f38, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  isStaticPiece: 1
 --- !u!1 &3515311332544786699
 GameObject:
   m_ObjectHideFlags: 0
@@ -1837,6 +1858,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8ccc8488606e7754eb1b364897b53f38, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  isStaticPiece: 1
 --- !u!1 &3515311332579346415
 GameObject:
   m_ObjectHideFlags: 0
@@ -6980,6 +7002,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8ccc8488606e7754eb1b364897b53f38, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  isStaticPiece: 1
 --- !u!1 &3515311332952753896
 GameObject:
   m_ObjectHideFlags: 0
@@ -7223,6 +7246,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8ccc8488606e7754eb1b364897b53f38, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  isStaticPiece: 1
 --- !u!1 &3515311333193502774
 GameObject:
   m_ObjectHideFlags: 0
@@ -12472,6 +12496,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8ccc8488606e7754eb1b364897b53f38, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  isStaticPiece: 1
 --- !u!1 &3515311333477752214
 GameObject:
   m_ObjectHideFlags: 0
@@ -12702,6 +12727,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8ccc8488606e7754eb1b364897b53f38, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  isStaticPiece: 1
 --- !u!114 &3515311333509589559
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -12714,6 +12740,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8ccc8488606e7754eb1b364897b53f38, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  isStaticPiece: 0
 --- !u!1 &3515311333575240565
 GameObject:
   m_ObjectHideFlags: 0
@@ -12824,6 +12851,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8ccc8488606e7754eb1b364897b53f38, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  isStaticPiece: 1
 --- !u!1 &3515311333591469471
 GameObject:
   m_ObjectHideFlags: 0
@@ -13199,6 +13227,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8ccc8488606e7754eb1b364897b53f38, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  isStaticPiece: 0
 --- !u!1 &4105579442918592478
 GameObject:
   m_ObjectHideFlags: 0
@@ -13456,6 +13485,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8ccc8488606e7754eb1b364897b53f38, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  isStaticPiece: 0
 --- !u!1 &4916082471423303057
 GameObject:
   m_ObjectHideFlags: 0
@@ -13468,6 +13498,7 @@ GameObject:
   - component: {fileID: 5674082795436108555}
   - component: {fileID: 778950989432907577}
   - component: {fileID: 3515311333192997226}
+  - component: {fileID: 4229123254812193679}
   m_Layer: 0
   m_Name: Track_Start
   m_TagString: Untagged
@@ -13552,6 +13583,19 @@ MeshCollider:
   m_Convex: 0
   m_CookingOptions: 30
   m_Mesh: {fileID: -4981226361295849206, guid: e95192ffd532e5444bed41b028069143, type: 3}
+--- !u!114 &4229123254812193679
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4916082471423303057}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8ccc8488606e7754eb1b364897b53f38, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  isStaticPiece: 1
 --- !u!1 &5872775160363488694
 GameObject:
   m_ObjectHideFlags: 0
@@ -13661,6 +13705,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8ccc8488606e7754eb1b364897b53f38, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  isStaticPiece: 0
 --- !u!1 &5904697954552577155
 GameObject:
   m_ObjectHideFlags: 0
@@ -13770,6 +13815,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8ccc8488606e7754eb1b364897b53f38, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  isStaticPiece: 0
 --- !u!1 &6949593719660375956
 GameObject:
   m_ObjectHideFlags: 0
@@ -13953,6 +13999,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8ccc8488606e7754eb1b364897b53f38, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  isStaticPiece: 0
 --- !u!1 &8529594685017490433
 GameObject:
   m_ObjectHideFlags: 0

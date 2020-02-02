@@ -9,6 +9,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 2647615923635895526}
+  - component: {fileID: 2277113917084043690}
   m_Layer: 0
   m_Name: Level_3
   m_TagString: Untagged
@@ -44,6 +45,20 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &2277113917084043690
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 342214689944085381}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3bd2924d344fd03418afb8afac30a740, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  firstTrack: {fileID: 192837599663301487}
+  endTrack: {fileID: 8614730988406544233}
 --- !u!1 &779503585168447908
 GameObject:
   m_ObjectHideFlags: 0
@@ -301,6 +316,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8ccc8488606e7754eb1b364897b53f38, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  isStaticPiece: 1
 --- !u!1 &6172357278845364007
 GameObject:
   m_ObjectHideFlags: 0
@@ -387,6 +403,7 @@ GameObject:
   - component: {fileID: 1105196677108732406}
   - component: {fileID: 2960679488915928378}
   - component: {fileID: 3630161018754156077}
+  - component: {fileID: 192837599663301487}
   m_Layer: 0
   m_Name: Track_Start (6)
   m_TagString: Untagged
@@ -471,6 +488,19 @@ MeshCollider:
   m_Convex: 0
   m_CookingOptions: 30
   m_Mesh: {fileID: -4981226361295849206, guid: e95192ffd532e5444bed41b028069143, type: 3}
+--- !u!114 &192837599663301487
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6911510788825222018}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8ccc8488606e7754eb1b364897b53f38, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  isStaticPiece: 1
 --- !u!1 &8713948952303079323
 GameObject:
   m_ObjectHideFlags: 0
@@ -596,6 +626,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 2647615923635895526}
     m_Modifications:
+    - target: {fileID: 558770226, guid: c5ea130108afb984ab211263bc82e6fe, type: 3}
+      propertyPath: isStaticPiece
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 5530848542368957564, guid: c5ea130108afb984ab211263bc82e6fe,
         type: 3}
       propertyPath: m_Name
@@ -956,6 +990,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: Track_Straight (10)
       objectReference: {fileID: 0}
+    - target: {fileID: 5037880004159019417, guid: f0ddb1875cb8a4e4f954848a61baf841,
+        type: 3}
+      propertyPath: isStaticPiece
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 8249178256510048702, guid: f0ddb1875cb8a4e4f954848a61baf841,
         type: 3}
       propertyPath: m_Materials.Array.data[0]
@@ -1145,6 +1184,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: Track_Straight (9)
+      objectReference: {fileID: 0}
+    - target: {fileID: 5037880004159019417, guid: f0ddb1875cb8a4e4f954848a61baf841,
+        type: 3}
+      propertyPath: isStaticPiece
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 5223455590980716016, guid: f0ddb1875cb8a4e4f954848a61baf841,
         type: 3}
@@ -1351,6 +1395,11 @@ PrefabInstance:
       propertyPath: m_LocalScale.z
       value: 0.1
       objectReference: {fileID: 0}
+    - target: {fileID: 6534794888297537017, guid: 3812cd91d45e7f24dab8869500c68bd3,
+        type: 3}
+      propertyPath: isStaticPiece
+      value: 1
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 3812cd91d45e7f24dab8869500c68bd3, type: 3}
 --- !u!4 &6963366343642570173 stripped
@@ -1471,6 +1520,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 2647615923635895526}
     m_Modifications:
+    - target: {fileID: 558770226, guid: c5ea130108afb984ab211263bc82e6fe, type: 3}
+      propertyPath: isStaticPiece
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 5530848542368957564, guid: c5ea130108afb984ab211263bc82e6fe,
         type: 3}
       propertyPath: m_Name
@@ -2031,6 +2084,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: Track_Straight (7)
       objectReference: {fileID: 0}
+    - target: {fileID: 5037880004159019417, guid: f0ddb1875cb8a4e4f954848a61baf841,
+        type: 3}
+      propertyPath: isStaticPiece
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 5223455590980716016, guid: f0ddb1875cb8a4e4f954848a61baf841,
         type: 3}
       propertyPath: parentObjectToMove
@@ -2156,6 +2214,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 2647615923635895526}
     m_Modifications:
+    - target: {fileID: 558770226, guid: c5ea130108afb984ab211263bc82e6fe, type: 3}
+      propertyPath: isStaticPiece
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 5530848542368957564, guid: c5ea130108afb984ab211263bc82e6fe,
         type: 3}
       propertyPath: m_Name
@@ -2330,6 +2392,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_LocalScale.z
       value: 0.099999994
+      objectReference: {fileID: 0}
+    - target: {fileID: 6534794888297537017, guid: 3812cd91d45e7f24dab8869500c68bd3,
+        type: 3}
+      propertyPath: isStaticPiece
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 3812cd91d45e7f24dab8869500c68bd3, type: 3}
@@ -2720,6 +2787,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_LocalScale.z
       value: 0.1
+      objectReference: {fileID: 0}
+    - target: {fileID: 7941354514340776024, guid: 9da3f8853cabbd445bf4edd7a78fd2e0,
+        type: 3}
+      propertyPath: isStaticPiece
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 9da3f8853cabbd445bf4edd7a78fd2e0, type: 3}
