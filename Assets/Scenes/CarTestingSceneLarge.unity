@@ -1358,11 +1358,6 @@ PrefabInstance:
       propertyPath: m_Name
       value: Track_Curve (4)
       objectReference: {fileID: 0}
-    - target: {fileID: 6124142871742361760, guid: c5ea130108afb984ab211263bc82e6fe,
-        type: 3}
-      propertyPath: m_Materials.Array.data[0]
-      value: 
-      objectReference: {fileID: 2100000, guid: 4cf605b4a6f92294abad9f2143f65904, type: 2}
     - target: {fileID: 8834616246003922543, guid: c5ea130108afb984ab211263bc82e6fe,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -2155,21 +2150,6 @@ PrefabInstance:
       propertyPath: m_Name
       value: Track_Straight (1)
       objectReference: {fileID: 0}
-    - target: {fileID: 5223455590980716016, guid: f0ddb1875cb8a4e4f954848a61baf841,
-        type: 3}
-      propertyPath: parentObjectToMove
-      value: 
-      objectReference: {fileID: 1718824791}
-    - target: {fileID: 5223455591071717740, guid: f0ddb1875cb8a4e4f954848a61baf841,
-        type: 3}
-      propertyPath: parentObjectToMove
-      value: 
-      objectReference: {fileID: 1718824791}
-    - target: {fileID: 8249178256510048702, guid: f0ddb1875cb8a4e4f954848a61baf841,
-        type: 3}
-      propertyPath: m_Materials.Array.data[0]
-      value: 
-      objectReference: {fileID: 2100000, guid: 4cf605b4a6f92294abad9f2143f65904, type: 2}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: f0ddb1875cb8a4e4f954848a61baf841, type: 3}
 --- !u!1 &2045209784
@@ -7659,11 +7639,6 @@ PrefabInstance:
       propertyPath: m_Name
       value: Track_Tunnel_Walls
       objectReference: {fileID: 0}
-    - target: {fileID: 6767878289375739201, guid: 0f7bf8142415ebb459144563b4a91a9a,
-        type: 3}
-      propertyPath: m_Materials.Array.data[0]
-      value: 
-      objectReference: {fileID: 2100000, guid: 4cf605b4a6f92294abad9f2143f65904, type: 2}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 0f7bf8142415ebb459144563b4a91a9a, type: 3}
 --- !u!4 &4870632742435341445
@@ -7827,11 +7802,6 @@ PrefabInstance:
       propertyPath: m_Name
       value: Track_Curve
       objectReference: {fileID: 0}
-    - target: {fileID: 6124142871742361760, guid: c5ea130108afb984ab211263bc82e6fe,
-        type: 3}
-      propertyPath: m_Materials.Array.data[0]
-      value: 
-      objectReference: {fileID: 2100000, guid: 4cf605b4a6f92294abad9f2143f65904, type: 2}
     - target: {fileID: 8834616246003922543, guid: c5ea130108afb984ab211263bc82e6fe,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -7955,11 +7925,6 @@ PrefabInstance:
       propertyPath: m_Name
       value: Track_Ramp
       objectReference: {fileID: 0}
-    - target: {fileID: 878714305271863490, guid: 3812cd91d45e7f24dab8869500c68bd3,
-        type: 3}
-      propertyPath: m_Materials.Array.data[0]
-      value: 
-      objectReference: {fileID: 2100000, guid: 4cf605b4a6f92294abad9f2143f65904, type: 2}
     - target: {fileID: 5223123245536215719, guid: 3812cd91d45e7f24dab8869500c68bd3,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -8014,11 +7979,6 @@ PrefabInstance:
         type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 6534794888207105129, guid: 3812cd91d45e7f24dab8869500c68bd3,
-        type: 3}
-      propertyPath: m_IsActive
-      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 3812cd91d45e7f24dab8869500c68bd3, type: 3}
@@ -8216,11 +8176,6 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1128548603}
     m_Modifications:
-    - target: {fileID: 5275313932333737027, guid: 9da3f8853cabbd445bf4edd7a78fd2e0,
-        type: 3}
-      propertyPath: m_Materials.Array.data[0]
-      value: 
-      objectReference: {fileID: 2100000, guid: 4cf605b4a6f92294abad9f2143f65904, type: 2}
     - target: {fileID: 5839330465914933407, guid: 9da3f8853cabbd445bf4edd7a78fd2e0,
         type: 3}
       propertyPath: m_Name

@@ -62,7 +62,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: eba3acaf654aebc47b18551004bf60c2, type: 2}
+  - {fileID: 2100000, guid: 4cf605b4a6f92294abad9f2143f65904, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -120,7 +120,6 @@ GameObject:
   - component: {fileID: 5223455590980716017}
   - component: {fileID: 5223455590980716016}
   - component: {fileID: 7646072798918786445}
-  - component: {fileID: 7646072799032735727}
   m_Layer: 9
   m_Name: SnapPointB
   m_TagString: Untagged
@@ -170,19 +169,6 @@ BoxCollider:
   serializedVersion: 2
   m_Size: {x: 1, y: 1, z: 1}
   m_Center: {x: 0, y: 0, z: 0}
---- !u!65 &7646072799032735727
-BoxCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 5223455590980716018}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 1
-  m_Enabled: 1
-  serializedVersion: 2
-  m_Size: {x: 1, y: 1, z: 1}
-  m_Center: {x: 0, y: 0, z: 0}
 --- !u!1 &5223455591071717742
 GameObject:
   m_ObjectHideFlags: 0
@@ -194,7 +180,6 @@ GameObject:
   - component: {fileID: 5223455591071717741}
   - component: {fileID: 5223455591071717740}
   - component: {fileID: 7646072798185373638}
-  - component: {fileID: 7646072799092271995}
   m_Layer: 9
   m_Name: SnapPointA
   m_TagString: Untagged
@@ -232,19 +217,6 @@ MonoBehaviour:
   snapLayer: 0
   radiusToCheck: 1
 --- !u!65 &7646072798185373638
-BoxCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 5223455591071717742}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 1
-  m_Enabled: 1
-  serializedVersion: 2
-  m_Size: {x: 1, y: 1, z: 1}
-  m_Center: {x: 0, y: 0, z: 0}
---- !u!65 &7646072799092271995
 BoxCollider:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
