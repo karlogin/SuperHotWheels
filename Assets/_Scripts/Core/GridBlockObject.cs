@@ -7,5 +7,8 @@ namespace SuperHotWheels.Core
 	{
 		[SerializeField] private BlockType blockType;
 		[SerializeField] private GameObject blockAsset;
+
+		public BlockType BlockType { get => blockType; set => blockType = value; }
+		public GameObject BlockAsset { get => blockAsset; set => blockAsset = value; }
 	}
 }

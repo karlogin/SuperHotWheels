@@ -6,9 +6,11 @@ namespace SuperHotWheels.Core
 	{
 		[SerializeField] private float blockRotation;
 
-		private void OnValidate()
+		public float BlockRotation { get => blockRotation; set => blockRotation = value; }
+
+		public void UpdateBlock()
 		{
-			transform.localEulerAngles = new Vector3(0.0f, blockRotation, 0.0f);
+			transform.localEulerAngles = new Vector3(0.0f, BlockRotation, 0.0f);
 		}
 	}
 }
