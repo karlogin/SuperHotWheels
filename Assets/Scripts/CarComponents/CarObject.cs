@@ -34,6 +34,7 @@ public class CarObject : MonoBehaviour
         if (startPiece)
         {
             SetStartingTransform(startPiece);
+            ResetCar();
         }
         else
         {
