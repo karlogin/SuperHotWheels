@@ -7,7 +7,7 @@ public class TrackPiece : MonoBehaviour
     private Vector3 mOffset;
     private float mZCoord;
 
-    void OnMouseDown()
+/*    void OnMouseDown()
     {
         mZCoord = Camera.main.WorldToScreenPoint(gameObject.transform.position).z;
 
@@ -37,7 +37,7 @@ public class TrackPiece : MonoBehaviour
     private void OnMouseUp()
     {
         DropPiece();
-    }
+    }*/
 
     public void SetTrackPieceLocal(Vector3 _pos)
     {
