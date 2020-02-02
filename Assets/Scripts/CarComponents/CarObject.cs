@@ -49,6 +49,7 @@ public class CarObject : MonoBehaviour
         return forwardSpeed;
     }
 
+    public float DEBUGAngleDifference;
     /// <summary>
     /// Instantly rotates the transform of the car to align it's facing direction to a collider 
     /// that is too steep to drive on.
@@ -57,7 +58,8 @@ public class CarObject : MonoBehaviour
     public void SetCarForwardRotation(Vector3 _rot)
     {
         //Only set rotation if is a wall
-        if(Vector3.Angle(transform.up, _rot) > 80)
+        DEBUGAngleDifference = Vector3.Angle(transform.up, _rot);
+        if (Vector3.Angle(transform.up, _rot) > 80)
         {
             Vector3 carForward = transform.forward - Vector3.Dot(transform.forward, _rot) * _rot;
             transform.rotation = Quaternion.LookRotation(carForward);            
